@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientRecordsAssignment", "PatientRecordsAssignment\PatientRecordsAssignment.csproj", "{4CE8E024-866F-4376-9ED0-795668154C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientRecordsAssignment.Tests", "PatientRecordsAssignment.Tests\PatientRecordsAssignment.Tests.csproj", "{F794563F-A9DF-4FB1-AD00-1BB06AC0407C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CE8E024-866F-4376-9ED0-795668154C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE8E024-866F-4376-9ED0-795668154C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE8E024-866F-4376-9ED0-795668154C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE8E024-866F-4376-9ED0-795668154C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F794563F-A9DF-4FB1-AD00-1BB06AC0407C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F794563F-A9DF-4FB1-AD00-1BB06AC0407C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F794563F-A9DF-4FB1-AD00-1BB06AC0407C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F794563F-A9DF-4FB1-AD00-1BB06AC0407C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80A718FC-C75C-4023-8A88-C99ABA24B16C}
+	EndGlobalSection
+EndGlobal
