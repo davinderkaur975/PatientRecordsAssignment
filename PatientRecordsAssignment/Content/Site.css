@@ -2,7 +2,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rosybrown;
-   
+    background-image: url(Images/doctor.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
 }
 
 
@@ -10,9 +13,10 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-top: 45px;
+    padding-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 .navbar {
