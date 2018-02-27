@@ -212,6 +212,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\doctor.jpg" />
+    <Content Include="Content\Images\doctors.jpg" />
+    <Content Include="Content\Images\doctorss.png" />
     <Content Include="Content\Images\patient.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
