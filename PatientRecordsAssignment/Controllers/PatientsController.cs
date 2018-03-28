@@ -10,11 +10,13 @@ using PatientRecordsAssignment.Models;
 
 namespace PatientRecordsAssignment.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class PatientsController : Controller
     {
         private PatientRecordsModel db = new PatientRecordsModel();
 
         // GET: Patients
+        [OverrideAuthorization]
         public ActionResult Index()
         {
             var patients = db.Patients.Include(p => p.Doctor);

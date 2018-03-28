@@ -10,11 +10,13 @@ using PatientRecordsAssignment.Models;
 
 namespace PatientRecordsAssignment.Controllers
 {
+    [Authorize]
     public class DoctorsController : Controller
     {
         private PatientRecordsModel db = new PatientRecordsModel();
 
         // GET: Doctors
+        [OverrideAuthorization]
         public ActionResult Index()
         {
             return View(db.Doctors.ToList());
