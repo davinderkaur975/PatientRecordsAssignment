@@ -10,7 +10,7 @@ using PatientRecordsAssignment.Models;
 
 namespace PatientRecordsAssignment.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize]
     public class PatientsController : Controller
     {
         private PatientRecordsModel db = new PatientRecordsModel();
@@ -24,6 +24,7 @@ namespace PatientRecordsAssignment.Controllers
         }
 
         // GET: Patients/Details/5
+        [OverrideAuthorization]
         public ActionResult Details(int? id)
         {
             if (id == null)

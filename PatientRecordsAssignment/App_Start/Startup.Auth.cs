@@ -56,8 +56,8 @@ namespace PatientRecordsAssignment
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "2139495569669962",
-               appSecret: "df77b5f4a2c95e80be448ab30a1ce83d");
+               appId: ConfigurationManager.AppSettings["FacebookAppId"],
+               appSecret: ConfigurationManager.AppSettings["FacebookAppSecret"]);
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {

@@ -9,8 +9,11 @@
     <h2>Doctors Information</h2>
     </div>
 
-    <p>
+<p>
+    @if (Request.IsAuthenticated)
+    {
         @Html.ActionLink("Create New", "Create")
+    }
     </p>
     <table class="table">
         <tr>
@@ -39,9 +42,16 @@
                     @Html.DisplayFor(modelItem => item.OfficeLocation)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.DoctorId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.DoctorId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.DoctorId })
+                    @if (Request.IsAuthenticated)
+                {
+                @Html.ActionLink("Edit", "Edit", new { id = item.DoctorId })
+                }|
+                    @Html.ActionLink("Details", "Details", new { id = item.DoctorId })
+                    |
+                    @if (Request.IsAuthenticated)
+                    {
+                @Html.ActionLink("Delete", "Delete", new { id = item.DoctorId })
+                    }
                 </td>
             </tr>
         }

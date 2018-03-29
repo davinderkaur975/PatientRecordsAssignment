@@ -23,6 +23,7 @@ namespace PatientRecordsAssignment.Controllers
         }
 
         // GET: Doctors/Details/5
+        [OverrideAuthorization]
         public ActionResult Details(int? id)
         {
             if (id == null)
