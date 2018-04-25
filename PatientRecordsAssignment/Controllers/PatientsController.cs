@@ -14,7 +14,6 @@ namespace PatientRecordsAssignment.Controllers
     public class PatientsController : Controller
     {
         private PatientRecordsModel db = new PatientRecordsModel();
-
         // GET: Patients
         [OverrideAuthorization]
         public ActionResult Index()
