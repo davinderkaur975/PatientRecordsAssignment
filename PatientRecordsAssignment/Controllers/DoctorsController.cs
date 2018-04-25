@@ -14,9 +14,22 @@ namespace PatientRecordsAssignment.Controllers
     public class DoctorsController : Controller
     {
         //db connection moved to EFDoctorsRepository
-        private PatientRecordsModel db = new PatientRecordsModel();
+        //private PatientRecordsModel db = new PatientRecordsModel();
+        private IMockDoctorsRepository db;
 
-       
+        //default constructor - no dependency incoming => use the database
+        public DoctorsController()
+        {
+            this.db = new EFDoctorsRepository();
+        }
+
+        //mock constructor - mock object passed as a dependency for unit testing
+
+        public DoctorsController(IMockDoctorsRepository mockRepo)
+        {
+            this.db = mockRepo;
+        }
+
 
 
         // GET: Doctors
