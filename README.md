@@ -7,9 +7,9 @@
 
 <p> In this I change the css of the website too.</p>
 
-<p> For my assignment2 part-1, I make all the views where users can add, edit, or delete data PRIVATE, so only authenticated users can access them
-     b.	On the Index views, anonymous users can view the list of data but cannot see the Create, Edit, or Delete links. 
-     Also, I add social authentication for google, microsoft and facebook and store the api in web.config file.
+<p> For my Assignment2 Part - 3, unit test is added for Doctors Controller 
+	
+	
 
 
 <p>The live site is deployed to Windows Azure at <a href="https://assignmentdoctorsite.azurewebsites.net/">https://assignmentdoctorsite.azurewebsites.net/</a>.</p>
